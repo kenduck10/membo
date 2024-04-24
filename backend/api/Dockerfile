@@ -4,4 +4,4 @@ COPY . .
 
 RUN cargo install --path .
 
-CMD ["api"]
+# CMD ["api"]
