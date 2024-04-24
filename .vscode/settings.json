@@ -1,4 +1,8 @@
 {
     "files.insertFinalNewline": true,
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "rust-analyzer.linkedProjects": [
+        "backend/api/Cargo.toml"
+    ],
+    "extensions.ignoreRecommendations": false,
 }
