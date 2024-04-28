@@ -1,7 +1,15 @@
 services:
-  demo:
-    build: ./demo
-    tty: true
-    stdin_open: true
+  # demo:
+  #   build: ./demo
+  #   tty: true
+  #   stdin_open: true
+  #   volumes:
+  #     - ./demo:/usr/src/demo
+  api:
+    build: ./api
     volumes:
-      - ./demo:/usr/src/demo
+      - ./api:/usr/src/api
+    command: |
+      sh -c "cargo install cargo-watch && cargo watch -x run"
+    ports:
+      - 8081:8080

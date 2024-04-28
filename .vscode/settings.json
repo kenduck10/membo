@@ -2,7 +2,8 @@
     "files.insertFinalNewline": true,
     "editor.formatOnSave": true,
     "rust-analyzer.linkedProjects": [
-        "backend/demo/Cargo.toml"
+        "backend/demo/Cargo.toml",
+        "backend/api/Cargo.toml"
     ],
     "extensions.ignoreRecommendations": false,
 }
