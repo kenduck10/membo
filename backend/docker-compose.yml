@@ -3,3 +3,5 @@ services:
     build: ./api
     tty: true
     stdin_open: true
+    volumes:
+      - ./api:/usr/src/api
