@@ -1,7 +1,5 @@
 FROM rust:1.77
-WORKDIR /usr/src/api
+WORKDIR /usr/src/demo
 COPY . .
 
 RUN cargo install --path .
-
-# CMD ["api"]
